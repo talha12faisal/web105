@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>t-f-clicks</title>
+<style>
+*{
+	padding:0px;
+	margin:0px;
+	}
+body{
+     background:white;	
+}
+#header{
+	width:100%;
+	height:160px;
+	background:#9ACD32;
+}
+#header img{
+	width:150px;
+	height:150px;
+	float:left;
+}
+#header h1{
+	float:right;
+	font-size:50px;
+	margin:30px 10% 0px 0px;
+	text-transform:uppercase;
+	color:black;
+	
+}
+
+	
+
+#main_content{
+		width:100%;
+	    height:1200px;
+	    background:url(uni.png) no-repeat;
+	    float:right;
+}
+#main_content img {
+		width:100%;
+	    height:800px;
+	    
+}
+#main_content nav{
+	   background: #148A40;
+	   height: 80px;
+	   width:100%;
+	
+} 		
+#main_content nav label.logo{
+	    color:black ;
+		font-size: 40px;
+		font-family: Lucida Sans Unicode; 
+		line-height: 80px;
+		font-weight: bold;
+		padding: 10 100px;
+		text-transform: uppercase;
+	
+		}
+		
+#main_content nav ul{
+		float:right;
+		margin-right: 20px;
+		
+}
+		
+#main_content nav ul li{
+		display: inline-block;
+		font-family: Lucida Sans Unicode;
+		margin: 0 5px;
+		line-height: 80px;
+		
+		
+		
+		
+}
+#main_content nav ul li a{
+		color: black;
+		font-size: 17px;
+		text-transform: uppercase;	
+		padding: 7px 13px;
+		border-radius: 3px;
+		
+		
+}
+        	
+#main_content nav ul li a.active , a:hover {
+		background: #6A8A14;
+		transition: .5s;
+		
+		
+}		
+
+.sub-menu-1{
+		display: none;
+}	
+
+#main_content.nav ul li :hover. sub-menu-1 {
+			
+        display: block;
+		position: absolute;
+		margin-top: 15px;
+		margin-left: -15px;
+}		
+
+.sub-menu-1 ul{
+		display: block;
+		margin: 10px;
+}	
+
+
+#main_content .featured{
+	width:100%;
+	height:385px;
+}
+#main_content .featured h2{
+	background:#9ACD32;
+	color:#000;
+	padding:10px;
+	margin:10px 0px;
+	text-transform:uppercase;
+	
+}
+#main_content .featured .container{
+	width:100%;
+	margin:0 auto;
+	white-space:nowrap;
+	overflow-x:auto;
+	overflow-y:hidden;
+}
+#main_content .featured .container .f_i{
+	width:19.5%;
+	height:260px;
+	background:#000;
+	margin-right:10px;
+	position:relative;
+	display:inline-block;
+	border:1px solid #fff;
+	
+}
+
+#main_content .featured .container .f_i img{
+	position:absolute;
+	top:0px;
+	left:0px;
+	width:100%;
+	height:300px;
+	text-align:center;
+	padding:10px px;
+}
+
+
+
+
+
+
+
+
+
+
+.login-container{
+position:relative;
+	width:230%;
+	height:300px;
+	border-radious:20px;
+	padding:10px;
+        background-color: #313741;
+}
+input{
+border-radius:15px;
+border:none;
+}
+input[type="email"], input[type="password"],input[type="text"],{
+        width:85%;
+	height:35px;
+	margin:5px;
+	padding:0 0 0 38px;
+        background: #2A2F39;
+        color:#fff;
+}
+
+input[type="submit"]{
+position:absolute;
+bottom:-10px;
+left:68px
+height:45px;
+width:158px;
+ background-color: #0171ff;
+color:#fff;
+cursor: pointer;
+}
+.input-field{
+position:realative;
+}
+i{
+position: absolute;
+color:#fff;
+left:15px;
+top:14px;
+}
+i:nth-child(4){
+left:200px;
+cursor:pointer;
+}
+
+
+
+
+
+
+
+.signup-container{
+position:relative;
+	width:230%;
+	height:300px;
+	border-radious:20px;
+	padding:10px;
+        background-color: #313741;
+}
+input{
+border-radius:15px;
+border:none;
+}
+input[type="email"], input[type="password"],input[type="text"],{
+        width:85%;
+	height:35px;
+	margin:5px;
+	padding:0 0 0 38px;
+        background: #2A2F39;
+        color:#fff;
+}
+
+input[type="submit"]{
+position:absolute;
+bottom:-10px;
+left:68px
+height:45px;
+width:158px;
+ background-color: #0171ff;
+color:#fff;
+cursor: pointer;
+}
+.input-field{
+position:realative;
+}
+i{
+position: absolute;
+color:#fff;
+left:15px;
+top:14px;
+}
+i:nth-child(4){
+left:200px;
+cursor:pointer;
+}
+
+
+
+
+
+
+
+
+
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  padding: 12px 16px;
+  z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+
+
+
+.pagination {
+  display: inline-block;
+}
+
+.pagination a {
+  color: black;
+  float: left;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+
+.pagination a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.pagination a:hover:not(.active) {background-color: #ddd;}
+
+
+
+</style>
+</head>
+<body>
+
+<div id="header">
+	 <img src="t-f-clicks.png" alt="official logo" />
+	 <h1>talha faisal photography </h1>
+	
+	 </div>
+	
+	 <div id="main_content">
+	 
+	 <nav> 
+	     <label class="logo"> T-F-CLICKS</label> 
+		 
+		 <ul>
+		 
+		 
+		     <li><a class= "active" href="">home</a>
+			    
+			 			
+			</li>	
+
+			 
+			 <li><a href="">profile picture </a>
+			 
+			 
+				<div class="sub-menu-1">
+				     <ul>
+					    <li><a href="">MISSION</a></li>
+					    <li><a href="">VISION</a></li>
+						<li><a href="">TEAM</a></li>
+					 </ul>
+				</div>
+			 
+			 </li>
+			 
+			 
+			 <li><a href="">taged photos</a></li>
+			 <li><a href="">contact</a></li>
+			 <li><a href="">about</a></li>
+		 </ul>
+	 </nav>
+	 <img src="t-f-clicks.png" alt="official logo" />
+	 
+
+	 <div class="featured">
+   <h2>GALLERY:</h2>
+      <div class="container">
+	    <div class="f_i"> 
+		  <img src="IMG_20220507_081640.png" alt="product img"/>
+		</div>   
+		
+		 <div class="f_i"> 
+		  <img src="IMG_20220507_081640.png" alt="product img"/>
+		</div>   
+		
+		 <div class="f_i"> 
+		  <img src="IMG_20220507_081640.png" alt="product img"/>
+		</div>   
+		
+		 <div class="f_i"> 
+		  <img src="IMG_20220507_081640.png" alt="product img"/>
+		</div>   
+		
+		 <div class="f_i"> 
+		  <img src="IMG_20220507_081640.png" alt="product img"/>
+		</div>   
+		
+		 
+	     
+	 </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class = "login-container"/>
+<div class="input-field"/>
+<input class=""placeholder="email" type="email"/>
+<i class="fa fa-user"></i>
+</div>
+<div class="input-field">
+<input placeholder="password" type="password"/>
+<br/>
+<i class="fa fa-lock" aria-hidden="true"></i>
+<i class="fa fa-eye" id="togglepassword" aria-hidden="true"></i>
+</div>
+<input type="submit" value="login"/>
+</div>
+
+
+
+
+<br>
+
+
+
+<div class = "signup-container"/>
+<div class="input-field"/>
+<input class=""placeholder="email" type="email"/>
+<i class="fa fa-user"></i>
+</div>
+<div class="input-field">
+<input placeholder="password" type="password"/>
+<br/>
+<i class="fa fa-lock" aria-hidden="true"></i>
+<i class="fa fa-eye" id="togglepassword" aria-hidden="true"></i>
+</div>
+<input type="submit" value="signup"/>
+</div>
+
+<br>
+
+
+<h2>sunset photography</h2>
+<p>Move the mouse over the text below to open the sunset photography section .</p>
+
+<div class="dropdown">
+  <span>Mouse over me</span>
+  <div class="dropdown-content">
+  <p>SUNSET PHOTOGRAPHY</p>
+  </div>
+</div>
+
+
+
+
+</br>
+
+
+
+<p>Move the mouse over the numbers to change page .</p>
+
+<div class="pagination">
+  <a href="#">&laquo;</a>
+  <a href="#">1</a>
+  <a class="active" href="#">2</a>
+  <a href="#">3</a>
+  <a href="#">4</a>
+  <a href="#">5</a>
+  <a href="#">6</a>
+  <a href="#">&raquo;</a>
+</div>
+</body>
+</html>
+
+
